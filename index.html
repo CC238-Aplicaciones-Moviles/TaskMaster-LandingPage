@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TaskMaster - Una plataforma para optimizar la gestión de proyectos ">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>TaskMaster | Gestión de Proyectos </title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <img src="img/TaskMaster_logo.png" alt="Logo de TaskMaster" width="80" height="80">
+        <span>TaskMaster</span>
+      </a>
+      <ul class="nav-menu">
+
+        <li><a href="#features" class="nav-link" data-i18n="nav.features">Características</a></li>
+        <li><a href="#benefits" class="nav-link" data-i18n="nav.benefits">Beneficios</a></li>
+        <li><a href="#about" class="nav-link" data-i18n="nav.about">Nosotros</a></li>
+        <li><a href="#faq-section" class="nav-link" data-i18n="nav.faq">FAQ</a></li>
+        <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contáctanos</a></li>
+        <li><a href="https://www.youtube.com/watch?v=d6uTAmI6gJY" class="nav-link" data-i18n="nav.signin" target="_blank">Iniciar Sesión</a></li>
+        <li><a href="https://www.youtube.com/watch?v=d6uTAmI6gJY" class="nav-link button-link" data-i18n="nav.signup"target="_blank">Registrarse</a>
+        </li>
+      </ul>
+      <button class="theme-toggle" aria-label="Cambiar modo oscuro/claro" title="Cambiar tema">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+      <button class="language-toggle" aria-label="Cambiar idioma" title="Change Language">
+        <span class="lang-text">EN</span>
+      </button>
+      <button class="hamburger" aria-label="Menú" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 data-i18n="hero.title">Transforma la gestión de tus proyectos con <span class="highlight">TaskMaster</span></h1>
+        <p class="hero-description" data-i18n="hero.description">Acelera la colaboración y mantén el control total de proyectos</p>
+        <a href="https://www.youtube.com/watch?v=d6uTAmI6gJY" class="cta-button" data-i18n="hero.cta"target="_blank">Registrarse</a>
+      </div>
+      <div class="explore__image">
+    <div class="app-mockup">
+      <div class="phone phone-front">
+        <img src="img/phone1.png" alt="Pantalla App 1" />
+      </div>
+      <div class="phone phone-back">
+        <img src="img/phone2.png" alt="Pantalla App 2" />
+      </div>
+    </div>
+  </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="features" class="features">
+      <div class="container">
+        <h2 class="section-title" data-i18n="features.title">Características principales</h2>
+        <div class="feature-item">
+  <div class="feature-image">
+    <div class="app-mockup1">
+      <div class="phone1">
+        <img src="img/phone3.png" alt="Pantalla App" />
+      </div>
+    </div>
+  </div>
+  <div class="feature-content">
+    <h3 data-i18n="features.sprint_stats.title">Gestión de Proyectos y Tareas</h3>
+    <p data-i18n="features.sprint_stats.description">Organiza tus proyectos y tareas en un solo lugar. Asigna responsabilidades, define plazos y prioridades, y permite a los miembros del equipo actualizar su progreso en tiempo real. Asegura un flujo de trabajo ordenado y eficiente, sin duplicidad de esfuerzos.</p>
+  </div>
+</div>
+
+
+        <div class="feature-item reverse">
+          <div class="feature-image">
+    <div class="app-mockup1">
+      <div class="phone1">
+        <img src="img/phone3.png" alt="Pantalla App" />
+      </div>
+    </div>
+  </div>
+          <div class="feature-content">
+            <h3 data-i18n="features.team_management.title">Colaboración en Tiempo Real</h3>
+            <p data-i18n="features.team_management.description">Facilita la comunicación entre los miembros del equipo mediante notificaciones instantáneas. Los cambios en las tareas y proyectos se reflejan en tiempo real, asegurando que todos los miembros estén siempre alineados y actualizados.</p>
+          </div>
+          
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-image">
+    <div class="app-mockup1">
+      <div class="phone1">
+        <img src="img/phone3.png" alt="Pantalla App" />
+      </div>
+    </div>
+  </div>
+          <div class="feature-content">
+            <h3 data-i18n="features.backlog_management.title">Visualización y Seguimiento del Progreso</h3>
+            <p data-i18n="features.backlog_management.description">Visualiza el estado de los proyectos y tareas a través de tableros y calendarios interactivos. Permite un seguimiento claro y efectivo del avance, ayudando a los líderes de proyecto a identificar rápidamente posibles retrasos o áreas que requieren atención.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-product" class="about-video-section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="about_product.title">Sobre el producto</h2>
+        <p class="about-video-description" data-i18n="about_product.description">Descubre cómo TaskMaster puede transformar la gestión de tus proyectos y potenciar la colaboración de tu equipo.</p>
+        <div class="video-wrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/watch?v=d6uTAmI6gJY" title="About the Product" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="benefits" class="benefits">
+      <div class="container">
+        <h2 class="section-title" data-i18n="benefits.title">Beneficios</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64" fill="none"
+                stroke="#940101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 data-i18n="benefits.work_environment.title">Mejora el ambiente laboral</h3>
+            <p data-i18n="benefits.work_environment.description">Mejora la gestión del trabajo con TaskMaster y reduce así la incertidumbre, generando un ambiente más
+              organizado y menos conflictivo.</p>
+            <a href="#features" class="benefit-link" data-i18n="benefits.work_environment.link">Descubre cómo <span>&rarr;</span></a>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64" fill="none"
+                stroke="#940101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 data-i18n="benefits.transparency.title">Aumenta la transparencia</h3>
+            <p data-i18n="benefits.transparency.description">Proporciona visibilidad total del progreso y los problemas del proyecto a todos los interesados,
+              mejorando la confianza y la responsabilidad.</p>
+            <a href="#features" class="benefit-link" data-i18n="benefits.transparency.link">Explora más <span>&rarr;</span></a>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64" fill="none"
+                stroke="#940101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+            </div>
+            <h3 data-i18n="benefits.decision_making.title">Mejora la toma de decisiones</h3>
+            <p data-i18n="benefits.decision_making.description">Proporciona datos en tiempo real y análisis predictivos que permiten tomar decisiones informadas y
+              reducir el riesgo de fracaso.</p>
+            <a href="#features" class="benefit-link" data-i18n="benefits.decision_making.link">Conoce más <span>&rarr;</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title" data-i18n="about.title">Nosotros</h2>
+        <div class="about-content">
+          <p data-i18n="about.description">WORKHUB es una startup dedicada a desarrollar soluciones innovadoras para optimizar la gestión de proyectos. 
+            Nos enfocamos en crear herramientas que mejoren la eficiencia, fomenten la
+            colaboración y ayuden a los equipos a alcanzar sus objetivos de manera efectiva.</p>
+
+          <p data-i18n="about.mission">Nuestra misión es elevar la eficiencia y calidad de los proyectos en startups, optimizando
+            flujos de trabajo y facilitando la toma de decisiones basadas en datos.</p>
+
+          <p data-i18n="about.vision">Aspiramos a ser líderes en la gestión de proyectos, ofreciendo soluciones que impulsen el éxito
+            y el crecimiento sostenible de las empresas emergentes.</p>
+        </div>
+      </div>
+    </section>
+  
+
+    <section id="about-team" class="about-video-section">
+  <div class="container">
+    <h2 class="section-title"data-i18n="about_team.title">Sobre el equipo</h2>
+    <p class="about-video-description" data-i18n="about_team.description">Conoce al equipo detrás de TaskMaster y cómo trabajamos para crear soluciones innovadoras para la gestión de proyectos de software.</p>
+  
+    <div class="team-grid">
+      <!-- Card 1 -->
+      <div class="team-card">
+        <img src="img/valentinoaa.png" alt="Integrante 1">
+        <div class="team-info">
+          <h3>Valentino Sandoval</h3>
+          <p>CEO & Fundador</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="team-card">
+        <img src="img/Omar.png" alt="Integrante 2">
+        <div class="team-info">
+          <h3>Omar Luquilla</h3>
+          <p>CTO - Ingeniería de Software</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="team-card">
+        <img src="img/Alvaro.png" alt="Integrante 3">
+        <div class="team-info">
+          <h3>Alvaro Bejarano</h3>
+          <p>Especialista en Data & Estrategia</p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="team-card">
+        <img src="img/Eric.png" alt="Integrante 4">
+        <div class="team-info">
+          <h3>Eric Olivera</h3>
+          <p>UI/UX Designer</p>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="team-card">
+        <img src="img/Lore.png" alt="Integrante 4">
+        <div class="team-info">
+          <h3>Loreley Sarmiento</h3>
+          <p>UI/UX Designer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section id="faq-section" class="faq-section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="faq.title">Preguntas Frecuentes</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span data-i18n="faq.what_is.question">¿Qué es TaskMaster?</span>
+              <span class="faq-icon"></span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq.what_is.answer">TaskMaster es una plataforma diseñada para optimizar la gestión de proyectos en empresas de software,
+                facilitando la colaboración y el seguimiento del progreso del equipo.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span data-i18n="faq.how_to_register.question">¿Cómo puedo registrarme?</span>
+              <span class="faq-icon"></span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq.how_to_register.answer">Puedes registrarte haciendo clic en el botón "Registrarse" en la parte superior de la página y
+                siguiendo las instrucciones.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span data-i18n="faq.benefits.question">¿Qué beneficios ofrece TaskMaster?</span>
+              <span class="faq-icon"></span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq.benefits.answer">TaskMaster ofrece mejoras en la transparencia, la toma de decisiones y el ambiente laboral, entre otros
+                beneficios que optimizan la gestión de proyectos.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span data-i18n="faq.easy_to_use.question">¿Es fácil de usar?</span>
+              <span class="faq-icon"></span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq.easy_to_use.answer">Sí, TaskMaster es fácil de usar para cualquier usuario que quiera gestionar un proyecto usando método
+                SCRUM.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h2 data-i18n="contact.title">Estamos aquí para <span class="highlight">ayudarte</span></h2>
+            <p class="contact-description" data-i18n="contact.description">¿Tienes preguntas o necesitas más información? Nuestro equipo está listo para
+              responder a tus consultas y ayudarte a descubrir cómo TaskMaster puede transformar la gestión de tus
+              proyectos.</p>
+
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <h3 data-i18n="contact.email.label">Correo electrónico</h3>
+                  <p>info@taskmaster.com</p>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <h3 data-i18n="contact.phone.label">Teléfono</h3>
+                  <p>+51 123 456 789</p>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <h3 data-i18n="contact.location.label">Ubicación</h3>
+                  <p data-i18n="contact.location.value">Lima, Perú</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-social">
+              <a href="https://www.facebook.com" class="social-icon" target="_blank" rel="noopener"
+                aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com" class="social-icon" target="_blank" rel="noopener"
+                aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="https://twitter.com" class="social-icon" target="_blank" rel="noopener" aria-label="Twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                  </path>
+                </svg>
+              </a>
+              <a href="https://linkedin.com" class="social-icon" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Formulario de contacto para EmailJS -->
+          <div class="form-card">
+            <h3 data-i18n="contact.form.title">Envíanos un mensaje</h3>
+            <p data-i18n="contact.form.subtitle">Completa el formulario y te responderemos a la brevedad.</p>
+
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="nombre" data-i18n="contact.form.name">Nombre completo</label>
+                <input type="text" id="nombre" name="from_name" data-i18n-placeholder="contact.form.name_placeholder" placeholder="Ej. Juan Pérez" required
+                  aria-required="true">
+              </div>
+
+              <div class="form-group">
+                <label for="email" data-i18n="contact.form.email">Correo electrónico</label>
+                <input type="email" id="email" name="from_email" data-i18n-placeholder="contact.form.email_placeholder" placeholder="Ej. juan@ejemplo.com" required
+                  aria-required="true">
+              </div>
+
+              <div class="form-group">
+                <label for="empresa" data-i18n="contact.form.company">Empresa</label>
+                <input type="text" id="empresa" name="company" data-i18n-placeholder="contact.form.company_placeholder" placeholder="Ej. Tu Empresa S.A.">
+              </div>
+
+              <div class="form-group">
+                <label for="mensaje" data-i18n="contact.form.message">Mensaje</label>
+                <textarea id="mensaje" name="message" rows="5" data-i18n-placeholder="contact.form.message_placeholder" placeholder="¿En qué podemos ayudarte?" required
+                  aria-required="true"></textarea>
+              </div>
+
+              <button type="submit" class="submit-button">
+                <span class="button-text" data-i18n="contact.form.submit">Enviar mensaje</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </form>
+          </div>
+
+          <!-- Formulario de newsletter para EmailJS -->
+          <form class="newsletter-form">
+            <input type="email" name="subscriber_email" data-i18n-placeholder="contact.newsletter.placeholder" placeholder="Tu correo electrónico" required>
+            <button type="submit" data-i18n="contact.newsletter.button">Suscribirse</button>
+          </form>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-info">
+            <a href="#" class="footer-logo">
+              <img src="img/TaskMaster_logo.png" alt="Logo de TaskMaster" width="80" height="80">
+              <span>TaskMaster</span>
+            </a>
+            <p data-i18n="footer.description">Optimizando la gestión de proyectos de software con soluciones innovadoras que impulsan la eficiencia y
+              colaboración.</p>
+            <div class="footer-social">
+              <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook"
+                class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram"
+                class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="https://www.x.com" target="_blank" rel="noopener" aria-label="X (Twitter)" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                  </path>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"
+                class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h3 data-i18n="footer.quick_links">Enlaces rápidos</h3>
+            <ul>
+              <li><a href="#features" data-i18n="nav.features">Características</a></li>
+              <li><a href="#benefits" data-i18n="nav.benefits">Beneficios</a></li>
+              <li><a href="#about" data-i18n="nav.about">Nosotros</a></li>
+              <li><a href="#faq-section" data-i18n="faq.title">Preguntas frecuentes</a></li>
+              <li><a href="#contact" data-i18n="nav.contact">Contáctanos</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h3 data-i18n="footer.resources">Recursos</h3>
+            <ul>
+              <li><a href="#" data-i18n="footer.blog">Blog</a></li>
+              <li><a href="#" data-i18n="footer.guides">Guías</a></li>
+              <li><a href="#" data-i18n="footer.documentation">Documentación</a></li>
+              <li><a href="#" data-i18n="footer.privacy_policy">Políticas de privacidad</a></li>
+              <li><a href="#" data-i18n="footer.terms_service">Términos de servicio</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-newsletter">
+            <h3 data-i18n="footer.newsletter.title">Mantente informado</h3>
+            <p data-i18n="footer.newsletter.description">Suscríbete a nuestro boletín para recibir noticias y actualizaciones.</p>
+            <form class="newsletter-form">
+              <input type="email" data-i18n-placeholder="contact.newsletter.placeholder" placeholder="Tu correo electrónico" required>
+              <button type="submit" data-i18n="contact.newsletter.button">Suscribirse</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-content">
+          <p data-i18n="footer.copyright">&copy; 2025 WORKHUB. Todos los derechos reservados.</p>
+          <div class="footer-bottom-links">
+            <a href="#" data-i18n="footer.privacy">Privacidad</a>
+            <a href="#" data-i18n="footer.terms">Términos</a>
+            <a href="#" data-i18n="footer.cookies">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.6.2/email.min.js" defer></script>
+  <script src="js/script.js" defer></script>
+
+</body>
+
+</html>
