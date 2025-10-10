@@ -1206,6 +1206,25 @@ img {
   .nav-container {
     gap: 1rem;
   }
+
+  /* Móvil: ocultar la imagen del logo y centrar solo el nombre para evitar solapamiento con el hamburguer */
+  .nav-logo img {
+    display: none !important;
+  }
+
+  .nav-logo {
+    justify-content: center;
+    width: 100%;
+    position: relative; /* para posicionar el span centrado */
+  }
+
+  .nav-logo span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    white-space: nowrap;
+  }
 }
 
 @keyframes fadeInUp {
