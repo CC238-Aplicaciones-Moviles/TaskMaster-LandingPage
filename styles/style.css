@@ -1297,6 +1297,99 @@ img {
   }
 }
 
+/* Header responsive: en pantallas pequeñas mostrar texto arriba y mockups debajo centrados */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column; /* columna: texto arriba, mockups abajo */
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-content {
+    order: 1;
+    width: 100%;
+    max-width: 720px;
+    padding: 0 1rem;
+  }
+
+  .hero-content .cta-button {
+    margin: 0 auto 1.5rem; /* centrar el botón y separar del mockup */
+    display: inline-block;
+  }
+
+  .explore__image, .app-mockup {
+    order: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  /* Asegurar que los mockups se reduzcan en pantallas pequeñas */
+  .app-mockup {
+    width: 320px;
+    height: auto;
+    display: flex;
+    flex-direction: column; /* apilar los phones verticalmente */
+    align-items: center;
+    gap: 0; /* quitar espacio para poder solaparlos */
+    position: relative; /* contexto para solapado */
+  }
+
+  .phone {
+    position: relative;
+    width: 200px;
+    height: 400px;
+    border-width: 12px;
+    border-radius: 32px;
+    transform: none !important; /* quitar rotaciones para mejor visual en móvil */
+    top: 0 !important;
+    left: 0 !important;
+  }
+
+  .phone-front, .phone-back {
+    transform: none !important;
+    opacity: 1 !important;
+    margin: 0 8px;
+    position: relative;
+  }
+
+  /* Solapar phones en móvil: el segundo (adjacent sibling) sube hacia arriba */
+  .app-mockup .phone + .phone {
+    margin-top: -140px; /* ajusta este valor para controlar el solapamiento */
+  }
+
+  .app-mockup .phone-front {
+    z-index: 3;
+  }
+
+  .app-mockup .phone-back {
+    z-index: 2;
+  }
+
+  /* Mostrar solo un teléfono en móvil: ocultar el de atrás y centrar el principal */
+  .app-mockup .phone-back {
+    display: none !important;
+  }
+
+  .app-mockup .phone-front {
+    position: relative;
+    margin: 0 auto;
+    left: 0 !important;
+    top: 0 !important;
+    transform: none !important;
+    width: 200px;
+    height: 400px;
+    z-index: 3;
+  }
+
+  .phone img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
 @media (max-width: 768px) {
   .nav-menu {
     position: fixed;
