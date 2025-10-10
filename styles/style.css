@@ -1604,6 +1604,7 @@ img {
   position: relative;
   width: 250px;
   height: 500px;
+  max-width: 100%; /* evita desbordes en contenedores pequeños */
   margin: 0 auto;
 }
 
@@ -1625,3 +1626,307 @@ img {
   object-position: center;
   border-radius: 25px;
 }
+
+/* Ajustes responsivos para los mockups dentro de feature-item */
+@media (max-width: 992px) {
+  .feature-image .app-mockup1 {
+    width: 220px;
+    height: 440px;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-image .app-mockup1 {
+    width: 200px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .feature-image .app-mockup1 {
+    width: 160px;
+    height: 320px;
+  }
+  .feature-image .phone1 img {
+    object-fit: contain; /* en pantallas muy pequeñas evita recortes importantes */
+  }
+}
+
+.download-section {
+  background-color: #f9f9f9;
+
+  padding: 120px 0 50px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+
+  min-height: calc(100vh - 70px);
+  box-sizing: border-box;
+}
+
+
+.download-card {
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 720px; 
+  padding: 36px; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+  align-items: center;
+  text-align: center; 
+  gap: 20px; 
+  margin: 0 auto; 
+  box-sizing: border-box;
+  border-radius: 24px; 
+}
+
+.download-card img {
+  width: 140px; 
+  height: auto;
+}
+
+
+[data-theme="dark"] .download-card {
+  background-color: var(--card-bg);
+  border: 1px solid rgba(255,255,255,0.03);
+  box-shadow: var(--shadow-lg);
+}
+
+[data-theme="dark"] .download-card h2 {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .download-card p {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .platform-card {
+  background-color: rgba(255,255,255,0.02);
+  border-color: rgba(255,255,255,0.04);
+}
+
+[data-theme="dark"] .platform-card:not(.disabled-platform):hover {
+  border-color: #ff6b6b; 
+  box-shadow: 0 10px 25px rgba(255, 0, 0, 0.06);
+}
+
+[data-theme="dark"] .platform-card .btn-download {
+  background: linear-gradient(135deg, #ff3030 0%, #ff0000 100%);
+  color: #fff;
+}
+
+[data-theme="dark"] .disabled-platform .btn-disabled {
+  background-color: #444;
+  color: #ddd;
+}
+
+
+.download-card h2 {
+  font-size: 2.25rem;
+  line-height: 1.1;
+  margin: 0.25rem 0 0.5rem;
+  color: var(--primary);
+}
+
+.download-card p {
+  font-size: 1.125rem; 
+  color: var(--text-secondary);
+  margin: 0 0 0.5rem;
+}
+
+
+.platform-icon {
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px; 
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.platform-card h5 {
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+
+.platforms {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px;
+  width: 100%;
+}
+
+
+.platform-card {
+  background-color: #f1f1f1;
+  width: 100%; 
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.platform-card .btn-download {
+  background-color: #000000;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.platform-card .btn-download:hover {
+  background-color: #ff0000;
+}
+
+.platform-card .btn-download:active {
+  transform: translateY(1px) scale(0.995);
+}
+
+.disabled-platform .btn-disabled:disabled {
+  cursor: not-allowed;
+  opacity: 0.95;
+}
+
+.disabled-platform {
+  background-color: #eeeeee;
+}
+
+.disabled-platform .btn-disabled {
+  background-color: #ccc;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+
+.platform-card .btn-download,
+.disabled-platform .btn-disabled {
+  white-space: nowrap;
+}
+
+
+.platform-card .btn-download,
+.disabled-platform .btn-disabled {
+  min-width: 160px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+
+.platform-card:not(.disabled-platform) {
+  transition: box-shadow 0.25s ease, border-color 0.25s ease, transform 0.18s ease;
+  border: 2px solid transparent;
+}
+
+.platform-card:not(.disabled-platform):hover {
+  border-color: #FF0033;
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.06);
+  transform: translateY(-4px);
+}
+
+
+.disabled-platform {
+  position: relative;
+  overflow: hidden;
+}
+
+.disabled-platform::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.0);
+  transition: background 0.2s ease;
+}
+
+.disabled-platform:hover {
+  cursor: not-allowed;
+}
+
+.disabled-platform:hover::after {
+  background: rgba(0,0,0,0.06);
+}
+
+
+.disabled-platform:hover::before {
+  content: '\1F512'; 
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  font-size: 20px;
+  color: #666;
+}
+
+
+.icon-android {
+  color: #3DDC84;
+}
+
+.icon-apple {
+  color: #999;
+}
+
+
+.platform-card .bi {
+  font-size: 2rem; 
+  margin-right: 16px;
+  line-height: 1;
+}
+
+
+.platform-card .text-start {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+
+.platform-card > .d-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+
+.platform-card > .d-flex .bi {
+  flex: 0 0 auto;
+}
+
+.platform-card > .d-flex .text-start {
+  flex: 1 1 auto;
+}
+
+.platform-card .text-start h5 {
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.platform-card .text-start small {
+  display: inline-block;
+  font-size: 0.95rem;
+}
+
+.disabled-platform .btn-disabled:disabled {
+  cursor: not-allowed;
+}
+
+
+
+
+
+

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TaskMaster - Una plataforma para optimizar la gestión de proyectos ">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <title>TaskMaster | Gestión de Proyectos </title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <img src="img/TaskMaster_logo.png" alt="Logo de TaskMaster" width="80" height="80">
+        <span>TaskMaster</span>
+      </a>
+        <ul class="nav-menu">
+
+  <li><a href="index.html#features" class="nav-link" data-i18n="nav.features">Características</a></li>
+  <li><a href="index.html#benefits" class="nav-link" data-i18n="nav.benefits">Beneficios</a></li>
+  <li><a href="index.html#about" class="nav-link" data-i18n="nav.about">Nosotros</a></li>
+  <li><a href="index.html#faq-section" class="nav-link" data-i18n="nav.faq">FAQ</a></li>
+  <li><a href="index.html#contact" class="nav-link" data-i18n="nav.contact">Contáctanos</a></li>
+         <li>
+        <a href="login.html" class="nav-link button-link" data-i18n="nav.downloadApp" target="_blank">
+          Descargar App
+        </a>
+      </li>
+        </li>
+      </ul>
+      <button class="theme-toggle" aria-label="Cambiar modo oscuro/claro" title="Cambiar tema">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+      <button class="language-toggle" aria-label="Cambiar idioma" title="Change Language">
+        <span class="lang-text">EN</span>
+      </button>
+      <button class="hamburger" aria-label="Menú" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
+
+
+    
+  <section class="download-section d-flex align-items-center justify-content-center">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-8">
+        <div class="download-card shadow-lg p-5 rounded-4 text-center">
+          <img src="img/TaskMaster_logo.png" alt="TaskMaster Logo" width="100" class="mb-4" />
+          <h2 class="mb-3" style="color: var(--first-color);">Descarga la App</h2>
+          <p class="text-muted mb-4">Lleva el control de tus postulaciones desde tu móvil</p>
+
+          <!-- Contenedor para las dos plataformas apiladas -->
+          <div class="platforms">
+            <!-- Tarjeta Android -->
+            <div class="platform-card">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-android2 fs-2 me-3 icon-android"></i>
+                <div class="text-start">
+                  <h5 class="mb-1" style="color: var(--first-color);">Android</h5>
+                  <small class="text-success">Disponible ahora</small>
+                </div>
+              </div>
+              <a href="#" class="btn btn-download">
+                <i class="bi bi-download me-2"></i>Descargar
+              </a>
+            </div>
+
+            <!-- Tarjeta iOS -->
+            <div class="platform-card disabled-platform">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-apple fs-2 me-3 icon-apple"></i>
+                <div class="text-start">
+                  <h5 class="mb-1 text-muted">iOS</h5>
+                  <small class="text-muted">Próximamente</small>
+                </div>
+              </div>
+              <button class="btn btn-disabled" disabled>
+                No disponible
+              </button>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <a href="index.html" class="text-decoration-none" style="color: var(--second-color);">
+              <i class="bi bi-arrow-left me-2"></i>Volver al inicio
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+    
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-info">
+            <a href="#" class="footer-logo">
+              <img src="img/TaskMaster_logo.png" alt="Logo de TaskMaster" width="80" height="80">
+              <span>TaskMaster</span>
+            </a>
+            <p data-i18n="footer.description">Optimizando la gestión de proyectos de software con soluciones innovadoras que impulsan la eficiencia y
+              colaboración.</p>
+            <div class="footer-social">
+              <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook"
+                class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram"
+                class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="https://www.x.com" target="_blank" rel="noopener" aria-label="X (Twitter)" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                  </path>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"
+                class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h3 data-i18n="footer.quick_links">Enlaces rápidos</h3>
+            <ul>
+              <li><a href="index.html#features" data-i18n="nav.features">Características</a></li>
+              <li><a href="index.html#benefits" data-i18n="nav.benefits">Beneficios</a></li>
+              <li><a href="index.html#about" data-i18n="nav.about">Nosotros</a></li>
+              <li><a href="index.html#faq-section" data-i18n="faq.title">Preguntas frecuentes</a></li>
+              <li><a href="index.html#contact" data-i18n="nav.contact">Contáctanos</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h3 data-i18n="footer.resources">Recursos</h3>
+            <ul>
+              <li><a href="#" data-i18n="footer.blog">Blog</a></li>
+              <li><a href="#" data-i18n="footer.guides">Guías</a></li>
+              <li><a href="#" data-i18n="footer.documentation">Documentación</a></li>
+              <li><a href="#" data-i18n="footer.privacy_policy">Políticas de privacidad</a></li>
+              <li><a href="#" data-i18n="footer.terms_service">Términos de servicio</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-newsletter">
+            <h3 data-i18n="footer.newsletter.title">Mantente informado</h3>
+            <p data-i18n="footer.newsletter.description">Suscríbete a nuestro boletín para recibir noticias y actualizaciones.</p>
+            <form class="newsletter-form">
+              <input type="email" data-i18n-placeholder="contact.newsletter.placeholder" placeholder="Tu correo electrónico" required>
+              <button type="submit" data-i18n="contact.newsletter.button">Suscribirse</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-content">
+          <p data-i18n="footer.copyright">&copy; 2025 WORKHUB. Todos los derechos reservados.</p>
+          <div class="footer-bottom-links">
+            <a href="#" data-i18n="footer.privacy">Privacidad</a>
+            <a href="#" data-i18n="footer.terms">Términos</a>
+            <a href="#" data-i18n="footer.cookies">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.6.2/email.min.js" defer></script>
+  <script src="js/script.js" defer></script>
+
+</body>
+
+</html>

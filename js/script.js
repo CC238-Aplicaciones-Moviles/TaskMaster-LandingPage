@@ -19,13 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
         about: "Nosotros",
         faq: "FAQ",
         contact: "Contáctanos",
-        signin: "Iniciar Sesión",
-        signup: "Registrarse"
+        downloadApp: "Descargar App",
       },
       hero: {
         title: "Transforma la gestión de tus proyectos con <span class=\"highlight\">TaskMaster</span>",
         description: "Acelera la colaboración y mantén el control total de los proyectos.",
-        cta: "Registrarse"
+        cta: "Descargar Aplicación"
       },
       features: {
         title: "Características principales",
@@ -150,13 +149,12 @@ document.addEventListener('DOMContentLoaded', () => {
         about: "About Us",
         faq: "FAQ",
         contact: "Contact",
-        signin: "Sign In",
-        signup: "Sign Up"
+        downloadApp: "Download App",
       },
       hero: {
         title: "Optimize development and lead with <span class=\"highlight\">TaskMaster</span>",
         description: "Accelerate collaboration and maintain total control of the projects.",
-        cta: "Sign Up"
+        cta: "Download App"
       },
       features: {
         title: "Key Features",
