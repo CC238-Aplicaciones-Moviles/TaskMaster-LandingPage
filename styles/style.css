@@ -518,9 +518,34 @@ img {
 
 /* About section */
 .about {
-  padding: 5rem 0;
-  background-color: var(--bg-primary);
-  transition: background-color 0.3s ease;
+  background: linear-gradient(135deg, #000 60%, #111 100%);
+  color: #fff;
+  padding: 5rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.03) 0,
+    rgba(255, 255, 255, 0.03) 2px,
+    transparent 2px,
+    transparent 6px
+  );
+  animation: moveLines 15s linear infinite;
+  z-index: 0;
+}
+
+.about .container {
+  position: relative;
+  z-index: 1;
 }
 
 .about-content {
@@ -532,8 +557,29 @@ img {
 .about-content p {
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
-  color: var(--text-secondary);
+  color: #bbb;
   transition: color 0.3s ease;
+}
+
+.about .section-title {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about-video {
+  max-width: 800px;
+  margin: 3rem auto 0;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 0 35px rgba(255, 255, 255, 0.25), 0 0 70px rgba(255, 255, 255, 0.15);
+  background: transparent;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about-video:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.2);
 }
 
 .faq-section {
@@ -1238,6 +1284,15 @@ img {
   }
 }
 
+@keyframes moveLines {
+  from { 
+    transform: translateY(0); 
+  }
+  to { 
+    transform: translateY(-50%); 
+  }
+}
+
 .feature-item,
 .benefit-card,
 .section-title {
@@ -1872,6 +1927,28 @@ img {
   height: auto;
 }
 
+.download-title {
+  color: var(--primary);
+}
+
+.platform-title {
+  color: var(--primary) !important;
+}
+
+.back-link {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.back-link:hover {
+  color: var(--secondary);
+  transform: translateX(-5px);
+}
+
 
 [data-theme="dark"] .download-card {
   background-color: var(--card-bg);
@@ -1948,76 +2025,165 @@ img {
 
 
 .platform-card {
-  background-color: #f1f1f1;
+  background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
   width: 100%; 
-  padding: 20px;
-  border-radius: 10px;
+  padding: 30px;
+  border-radius: 16px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   text-align: left;
   box-sizing: border-box;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.platform-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.platform-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--primary);
+  box-shadow: 0 12px 30px rgba(255, 0, 51, 0.15);
+}
+
+.platform-card:hover::before {
+  transform: scaleX(1);
+}
+
+.platform-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.platform-header {
+  margin-bottom: 0;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.platform-header .icon-crown {
+  color: #FFD700;
+  filter: drop-shadow(0 2px 8px rgba(255, 215, 0, 0.3));
+}
+
+.platform-header .icon-leader {
+  color: var(--primary);
+  filter: drop-shadow(0 2px 8px rgba(255, 0, 51, 0.3));
+}
+
+.platform-header .icon-people {
+  color: var(--primary);
+  filter: drop-shadow(0 2px 8px rgba(255, 0, 51, 0.3));
+}
+
+.platform-info {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.platform-info h5 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.platform-info p {
+  margin: 0;
+  font-size: 0.95rem;
 }
 
 .platform-card .btn-download {
-  background-color: #000000;
+  background: linear-gradient(135deg, var(--primary) 0%, #ff3333 100%);
   color: white;
-  border-radius: 5px;
-  padding: 10px 20px;
+  border-radius: 10px;
+  padding: 12px 28px;
   text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  min-width: 180px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .platform-card .btn-download:hover {
-  background-color: #ff0000;
+  background: linear-gradient(135deg, #ff3333 0%, var(--primary) 100%);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 0, 51, 0.3);
 }
 
 .platform-card .btn-download:active {
-  transform: translateY(1px) scale(0.995);
+  transform: scale(0.98);
 }
 
-.disabled-platform .btn-disabled:disabled {
-  cursor: not-allowed;
-  opacity: 0.95;
+[data-theme="dark"] .platform-card {
+  background: linear-gradient(135deg, #1a1a1a 0%, #222222 100%);
 }
 
-.disabled-platform {
-  background-color: #eeeeee;
+[data-theme="dark"] .platform-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 12px 30px rgba(255, 0, 51, 0.3);
 }
 
-.disabled-platform .btn-disabled {
-  background-color: #ccc;
-  color: #fff;
-  border-radius: 5px;
-  padding: 10px 20px;
+[data-theme="dark"] .platform-info h5 {
+  color: var(--primary);
 }
 
+@media (max-width: 768px) {
+  .platform-card {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-.platform-card .btn-download,
-.disabled-platform .btn-disabled {
-  white-space: nowrap;
-}
+  .platform-left {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 15px;
+  }
 
+  .platform-header {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
 
-.platform-card .btn-download,
-.disabled-platform .btn-disabled {
-  min-width: 160px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  font-weight: 600;
-}
+  .platform-info {
+    text-align: center;
+  }
 
+  .platform-info h5 {
+    font-size: 1.2rem;
+  }
 
-.platform-card:not(.disabled-platform) {
-  transition: box-shadow 0.25s ease, border-color 0.25s ease, transform 0.18s ease;
-  border: 2px solid transparent;
-}
-
-.platform-card:not(.disabled-platform):hover {
-  border-color: #FF0033;
-  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.06);
-  transform: translateY(-4px);
+  .platform-card .btn-download {
+    width: 100%;
+    min-width: auto;
+  }
 }
 
 

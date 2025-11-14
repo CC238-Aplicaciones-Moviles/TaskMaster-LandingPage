@@ -70,18 +70,23 @@
       <div class="col-lg-6 col-md-8">
         <div class="download-card shadow-lg p-5 rounded-4 text-center">
           <img src="img/TaskMaster_logo.png" alt="TaskMaster Logo" width="100" class="mb-4" />
-          <h2 class="mb-3" style="color: var(--first-color);">Descarga la App</h2>
+          <h2 class="mb-3 download-title">Descarga la App</h2>
           <p class="text-muted mb-4">Gestiona tus proyectos de manera eficiente desde tu móvil, ¡lleva el control en cualquier momento y lugar!</p>
 
-          <!-- Contenedor para las dos plataformas apiladas -->
+          <!-- Contenedor para las dos plataformas lado a lado -->
           <div class="platforms">
-            <!-- Tarjeta Android -->
-            <div class="platform-card">
-              <div class="d-flex align-items-center">
-                <i class="bi bi-android2 fs-2 me-3 icon-android"></i>
-                <div class="text-start">
-                  <h5 class="mb-1" style="color: var(--first-color);">Android</h5>
-                  <small class="text-success">Disponible ahora</small>
+            <!-- Tarjeta Android - Team Leader -->
+            <div class="platform-card platform-team-leader">
+              <div class="platform-left">
+                <div class="platform-header">
+                  <i class="bi bi-person-badge-fill icon-leader"></i>
+                </div>
+                <div class="platform-info">
+                  <h5 class="platform-title">Team Leader</h5>
+                  <p class="text-muted small mb-3">Aplicación para líderes de equipo</p>
+                  <small class="text-success d-block mb-3">
+                    <i class="bi bi-check-circle-fill"></i> Disponible ahora
+                  </small>
                 </div>
               </div>
               <a href="https://drive.google.com/uc?export=download&id=1HDYOTiyFlEiQrN_sR8VuqhaZn_qUZAVD" class="btn btn-download">
@@ -89,23 +94,28 @@
               </a>
             </div>
 
-            <!-- Tarjeta iOS -->
-            <div class="platform-card disabled-platform">
-              <div class="d-flex align-items-center">
-                <i class="bi bi-apple fs-2 me-3 icon-apple"></i>
-                <div class="text-start">
-                  <h5 class="mb-1 text-muted">iOS</h5>
-                  <small class="text-muted">Próximamente</small>
+            <!-- Tarjeta Android - Team Member -->
+            <div class="platform-card platform-team-member">
+              <div class="platform-left">
+                <div class="platform-header">
+                  <i class="bi bi-people-fill fs-1 icon-people"></i>
+                </div>
+                <div class="platform-info">
+                  <h5 class="platform-title">Team Member</h5>
+                  <p class="text-muted small mb-3">Aplicación para miembros del equipo</p>
+                  <small class="text-success d-block mb-3">
+                    <i class="bi bi-check-circle-fill"></i> Disponible ahora
+                  </small>
                 </div>
               </div>
-              <button class="btn btn-disabled" disabled>
-                No disponible
-              </button>
+              <a href="https://drive.google.com/uc?export=download&id=1HDYOTiyFlEiQrN_sR8VuqhaZn_qUZAVD" class="btn btn-download">
+                <i class="bi bi-download me-2"></i>Descargar
+              </a>
             </div>
           </div>
 
           <div class="mt-4">
-            <a href="index.html" class="text-decoration-none" style="color: var(--second-color);">
+            <a href="index.html" class="back-link">
               <i class="bi bi-arrow-left me-2"></i>Volver al inicio
             </a>
           </div>
