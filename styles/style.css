@@ -1217,7 +1217,7 @@ img {
 }
 
 [data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
-  background: #ff9e40;
+  background: #ff0000;
 }
 
 [data-theme="dark"] .contact-description {
